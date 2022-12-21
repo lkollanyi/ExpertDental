@@ -1,0 +1,188 @@
+
+
+/* CONTENTS: 
+/* Universal Styles */
+/* Header */
+/* Sign Up Section */
+/* Features Section */
+/* Filters Section */
+/* Quotes Section */
+/* Footer */
+
+
+
+
+/*#region -----------#Universal Styles -------------------------------------------*/
+
+html {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 40px;
+} 
+
+.card-container {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 0 0 1000px;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
+.card {
+    background-color: rgb(221, 216, 216);
+    box-shadow: 2px 2px 4px 2px rgb(156, 133, 133);
+    flex: 0 0 20vw;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.img-container {
+    overflow: hidden;
+    width: 90%;
+    margin: 1rem auto;
+    
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+.card-container {
+    flex-direction: column;
+}
+}
+
+
+/*#endregion*/
+
+/*#region -----------#Header -------------------------------------------*/
+nav {
+    background-color: rgb(195, 140, 140);
+}
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+nav li {
+    margin: 1rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+nav li:hover {
+    background-color: rgb(203, 190, 190);
+}
+
+.hero {
+    height: 13rem;
+    background:  linear-gradient( 0deg, rgba(200, 200, 200, 0.6),  rgba(200, 200, 200, 0.6)), url("../images/tooth_rows.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+
+.hero h1 {
+    font-size: 80px;
+    margin: 10px 0px;
+}
+
+.hero span {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.4em;
+
+}
+
+#mission {
+    height: 15rem;
+    padding: 3rem 2rem;
+    background: #c4bfbc;
+}
+
+#mission h2 {
+    font-size: 40px;
+    margin: 20px 0px;
+}
+
+#mission p {
+    font-size: 18px;
+    line-height: 1.5rem;
+
+}
+/*#endregion*/
+
+/*#region -----------#Services -------------------------------------------*/
+
+#services {
+    background-color: rgb(207, 177, 177);
+    padding: 1rem;
+}
+.price {
+    text-align: center;
+    line-height: 1.3rem;
+}
+/*#endregion*/
+
+/*#region -----------#Testimonials -------------------------------------------*/
+#testimonials {
+    background-color: rgb(255, 244, 244);
+    padding: 1rem;
+}
+
+#testimonials blockquote {
+    font-style: italic;
+    font-style: 20px;
+}
+
+#testimonials p {
+    font-size: 16px;
+    margin-left: 2rem;
+    text-align: right;
+}
+
+#testimonials p::before {
+    content: "—"
+}
+
+#testimonials .card {
+    box-shadow: 2px 2px 4px 2px rgb(155, 147, 147);
+}
+/*#endregion*/
+
+/*#region -----------#Contact -------------------------------------------*/
+#contacts ul{
+    padding: 5px;
+    background-color: rgb(218, 152, 144);
+    height: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+/*#endregion*/
+
+
